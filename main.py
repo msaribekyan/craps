@@ -4,7 +4,7 @@ def roll_dice():
     die1 = random.randint(1,6)
     die2 = random.randint(1,6)
     sum = die1+die2
-    print(f"""The sum of dice is {die1} + {die2} = {sum}""")
+    print(f"The sum of dice is {die1} + {die2} = {sum}")
     return sum
 
 def start_game():
@@ -18,7 +18,7 @@ def start_game():
     else:
         # Stage 2
         target = sum
-        print(f"""Now your goal number is {target}""") 
+        print(f"Now your goal number is {target}") 
         while(True):
             sum = roll_dice()
             if sum == target:
